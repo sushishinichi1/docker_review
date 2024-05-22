@@ -11,7 +11,7 @@ services:
         source: "./php-apache/000-default.conf"
         target: "/etc/apache2/sites-enabled/000-default.conf"
       - type: bind
-        source: "./php-apache/app/public"
+        source: "./php-apache/app"
         target: "/var/www/docker_review/public"
     depends_on:
       - review-mysql
